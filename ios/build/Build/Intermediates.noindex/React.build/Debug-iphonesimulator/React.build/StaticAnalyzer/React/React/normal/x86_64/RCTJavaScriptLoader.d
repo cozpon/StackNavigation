@@ -1,0 +1,26 @@
+dependencies: \
+  /Users/AirRicky/DevLeague/asl/node_modules/react-native/React/Base/RCTJavaScriptLoader.mm \
+  /Users/AirRicky/DevLeague/asl/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/AirRicky/DevLeague/asl/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/AirRicky/DevLeague/asl/ios/build/Build/Products/Debug-iphonesimulator/include/cxxreact/JSBundleType.h \
+  /Users/AirRicky/DevLeague/asl/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/AirRicky/DevLeague/asl/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /Users/AirRicky/DevLeague/asl/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/AirRicky/DevLeague/asl/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/AirRicky/DevLeague/asl/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/AirRicky/DevLeague/asl/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/AirRicky/DevLeague/asl/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/AirRicky/DevLeague/asl/node_modules/react-native/React/Base/RCTConvert.h \
+  /Users/AirRicky/DevLeague/asl/node_modules/react-native/React/Views/RCTAnimationType.h \
+  /Users/AirRicky/DevLeague/asl/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Users/AirRicky/DevLeague/asl/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/AirRicky/DevLeague/asl/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/AirRicky/DevLeague/asl/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/AirRicky/DevLeague/asl/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Users/AirRicky/DevLeague/asl/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
+  /Users/AirRicky/DevLeague/asl/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/AirRicky/DevLeague/asl/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/AirRicky/DevLeague/asl/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/AirRicky/DevLeague/asl/node_modules/react-native/React/Base/RCTMultipartDataTask.h \
+  /Users/AirRicky/DevLeague/asl/node_modules/react-native/React/Base/RCTMultipartStreamReader.h \
+  /Users/AirRicky/DevLeague/asl/node_modules/react-native/React/Base/RCTPerformanceLogger.h
