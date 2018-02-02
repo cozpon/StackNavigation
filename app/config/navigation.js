@@ -1,24 +1,9 @@
 import React from "react";
-import { StackNavigator, TabNavigator, DrawerNavigator, DrawerItems } from "react-navigation";
+import { TabNavigator } from "react-navigation";
 
 import Home from '../views/Home';
 import First from '../views/First';
 import Second from '../views/Second';
-
-// export const Drawer = DrawerNavigator({
-//   Home: {
-//     screen: Home,
-//   },
-//   First: {
-//    screen: First,
-//   },
-//   Second: {
-//    screen: Second,
-//   }
-// }, {
-//   contentComponent: DrawerContent,
-//   drawerWidth: 250
-// });
 
 export const Tab = TabNavigator({
   Home: {
@@ -38,7 +23,7 @@ export const Tab = TabNavigator({
     activeBackgroundColor: "#2EC4B6",
     inactiveTintColor: '#666',
     labelStyle: {
-      fontSize: 12,
+      fontSize: 22,
       padding: 12
     }
   }

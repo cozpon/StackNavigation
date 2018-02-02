@@ -1,18 +1,23 @@
 import React, {Component} from 'react';
-import { NavigationActions } from 'react-navigation';
-import { ScrollView, Text } from 'react-native';
+import { ScrollView, Text, StyleSheet } from 'react-native';
 
 class First extends Component {
-
  render() {
     return (
       <ScrollView>
-      <Text>
-      FIRST PAGE
-      </Text>
+        <Text style={styles.textFirst}> FIRST PAGE </Text>
       </ScrollView>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  textFirst: {
+    fontSize: 50,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginTop: 300,
+  },
+});
 
 export default First;

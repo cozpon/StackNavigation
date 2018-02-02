@@ -1,14 +1,23 @@
-import React, {Component} from "react";
-import { ScrollView, Text } from 'react-native';
+import React, { Component } from "react";
+import { ScrollView, Text, StyleSheet } from 'react-native';
 
 class Home extends Component {
  render() {
     return (
         <ScrollView>
-          <Text style={{fontSize: 40, fontWeight: 'bold'}}> Welcome 2 Hell </Text>
+          <Text style={styles.text}> Welcome </Text>
         </ScrollView>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  text: {
+    fontSize: 50,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginTop: 300,
+  },
+});
 
 export default Home;
