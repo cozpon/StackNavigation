@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
-import { Tab } from "./config/navigation";
+import { View } from 'react-native';
+import { Tab, Drawer } from "./config/navigation";
 
 export default class App extends Component {
   render() {
-      return( <Tab /> );
+      return(
+      <View>
+        <Drawer />
+        <Tab />
+      </View>
+        );
   }
 }
