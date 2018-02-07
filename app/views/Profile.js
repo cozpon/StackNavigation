@@ -1,16 +1,13 @@
-import React, { Component } from "react";
-import { Text, StyleSheet } from 'react-native';
+import React, {Component} from 'react';
+import { ScrollView, Text, StyleSheet } from 'react-native';
 import { Icon } from 'react-native-elements';
 import { Container, Left, Right, Header, Body, Title } from "native-base";
 
-class Home extends Component {
-  constructor(props) {
-    super(props)
-  }
+class Profile extends Component {
   render() {
-  let navigation = this.props.navigation;
+    let navigation = this.props.navigation;
     return (
-        <Container>
+      <Container>
         <Header style={{backgroundColor: '#a9c3d2'}}>
           <Left>
             <Icon
@@ -24,24 +21,24 @@ class Home extends Component {
             </Left>
 
             <Body>
-              <Title> Great Tutorial </Title>
+              <Text> So thorough </Text>
             </Body>
 
             <Right>
-              <Text> very nice </Text>
+              <Text> much explanation </Text>
             </Right>
         </Header>
 
-          <Text style={styles.text}>
-          Welcome Home!
-          </Text>
-        </Container>
+        <Text style={styles.textFirst}>
+          Welcome to your Profile
+        </Text>
+      </Container>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  text: {
+  textFirst: {
     fontSize: 50,
     fontWeight: 'bold',
     textAlign: 'center',
@@ -49,4 +46,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Home;
+export default Profile;

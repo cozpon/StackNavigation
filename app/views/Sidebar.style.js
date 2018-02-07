@@ -13,6 +13,6 @@ export default {
     paddingHorizontal: 5
   },
   button: {
-    backgroundColor: '#E71D36',
+    backgroundColor: '#FF9F1C',
   }
 };

@@ -1,18 +1,20 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
 import { ScrollView, Text, StyleSheet } from 'react-native';
 
-class Second extends Component {
+class Last extends Component {
  render() {
     return (
       <ScrollView>
-        <Text style={styles.textSecond}> SECOND PAGE </Text>
+        <Text style={styles.text}>
+          Oh no! I don't have a header!!!
+        </Text>
       </ScrollView>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  textSecond: {
+  text: {
     fontSize: 50,
     fontWeight: 'bold',
     textAlign: 'center',
@@ -20,4 +22,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Second;
+export default Last;

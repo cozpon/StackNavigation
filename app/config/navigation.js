@@ -3,22 +3,22 @@ import { TabNavigator, DrawerNavigator } from "react-navigation";
 
 import DrawerContent from "../views/Sidebar"
 
-import First from '../views/First';
-import Second from '../views/Second';
+import Profile from '../views/Profile';
+import Extra from '../views/Extra';
 
 import Home from '../views/Home';
-import Four from '../views/Four';
-import Five from '../views/Five';
+import Info from '../views/Info';
+import Last from '../views/Last_One';
 
 export const Drawer = DrawerNavigator({
   Home: {
     screen: Home,
   },
-  Four: {
-    screen: Four,
+  Info: {
+    screen: Info,
   },
-  Five: {
-    screen: Five,
+  Last: {
+    screen: Last,
   }
 }, {
   contentComponent: DrawerContent,
@@ -33,18 +33,18 @@ export const Tab = TabNavigator({
   Home: {
     screen: Drawer,
   },
-  First: {
-    screen: First,
+  Profile: {
+    screen: Profile,
   },
-  Second: {
-    screen: Second,
+  Extra: {
+    screen: Extra,
   }
 }, {
   tabBarPosition: 'bottom',
   swipeEnabled: true,
   tabBarOptions: {
-    activeTintColor: '#f2f2f2',
-    activeBackgroundColor: "#2EC4B6",
+    activeTintColor: '#e58f19',
+    activeBackgroundColor: "#a9c3d2",
     inactiveTintColor: '#666',
     labelStyle: {
       fontSize: 22,
