@@ -11,7 +11,15 @@ class Home extends Component {
   let navigation = this.props.navigation;
     return (
         <ScrollView>
-          <Text style={styles.text}> Home </Text>
+          <Text style={styles.text}> Welcome Home </Text>
+          <Icon
+              name='map-o'
+              type='font-awesome'
+              size={50}
+              color={'#FF9F1C'}
+              underlayColor={'white'}
+              onPress={() => navigation.navigate("DrawerOpen")}
+            />
         </ScrollView>
     );
   }

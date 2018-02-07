@@ -20,12 +20,18 @@ class DrawerContent extends Component {
       <View style={styles.container}>
         <ScrollView>
 
+          <Text style={styles.separatorTop}>
+          </Text>
+
           <Button
             raised
             icon={{name: 'trash-o', type: 'font-awesome', size: 20}}
-            title='Three'
+            title='Home'
             buttonStyle={styles.button}
-            onPress={this.navigateToScreen('Three')}/>
+            onPress={this.navigateToScreen('Home')}/>
+
+            <Text style={styles.sectionHeadingStyle}>
+            </Text>
 
           <Button
             raised
@@ -33,6 +39,9 @@ class DrawerContent extends Component {
             title='Four'
             buttonStyle={styles.button}
             onPress={this.navigateToScreen('Four')}/>
+
+            <Text style={styles.sectionHeadingStyle}>
+           </Text>
 
           <Button
             raised

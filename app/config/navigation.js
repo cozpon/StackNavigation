@@ -3,17 +3,16 @@ import { TabNavigator, DrawerNavigator } from "react-navigation";
 
 import DrawerContent from "../views/Sidebar"
 
-import Home from '../views/Home';
 import First from '../views/First';
 import Second from '../views/Second';
 
-import Three from '../views/Three';
+import Home from '../views/Home';
 import Four from '../views/Four';
 import Five from '../views/Five';
 
 export const Drawer = DrawerNavigator({
-  Three: {
-    screen: Three,
+  Home: {
+    screen: Home,
   },
   Four: {
     screen: Four,
@@ -24,7 +23,7 @@ export const Drawer = DrawerNavigator({
 }, {
   contentComponent: DrawerContent,
   drawerWidth: 250,
-  drawerPosition: 'right',
+  drawerPosition: 'left',
   drawerOpenRoute: 'DrawerOpen',
   drawerCloseRoute: 'DrawerClose',
   drawerToggleRoute: 'DrawerToggle',
