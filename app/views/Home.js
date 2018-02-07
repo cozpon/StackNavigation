@@ -1,11 +1,17 @@
 import React, { Component } from "react";
 import { ScrollView, Text, StyleSheet } from 'react-native';
+import { Icon } from 'react-native-elements';
 
 class Home extends Component {
- render() {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+  let navigation = this.props.navigation;
     return (
         <ScrollView>
-          <Text style={styles.text}> Welcome </Text>
+          <Text style={styles.text}> Home </Text>
         </ScrollView>
     );
   }
