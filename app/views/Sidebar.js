@@ -19,35 +19,28 @@ class DrawerContent extends Component {
     return (
       <View style={styles.container}>
         <ScrollView>
-        <Text style={styles.separatorBottom}>
-        </Text>
 
-        <Button
-          raised
-          icon={{name: 'umbrella', type: 'font-awesome'}}
-          title='First'
-          buttonStyle={styles.button}
-          onPress={this.navigateToScreen('First')}/>
+          <Button
+            raised
+            icon={{name: 'trash-o', type: 'font-awesome', size: 20}}
+            title='Three'
+            buttonStyle={styles.button}
+            onPress={this.navigateToScreen('Three')}/>
 
-          <Text style={styles.sectionHeadingStyle}>
-          </Text>
+          <Button
+            raised
+            icon={{name: 'umbrella', type: 'font-awesome', size: 20}}
+            title='Four'
+            buttonStyle={styles.button}
+            onPress={this.navigateToScreen('Four')}/>
 
-        <Button
-         raised
-         icon={{name: 'user-circle', type: 'font-awesome', size: 20}}
-         title='Home'
-         buttonStyle={styles.button}
-         onPress={this.navigateToScreen('Home')}/>
+          <Button
+            raised
+            icon={{name: 'user-circle', type: 'font-awesome', size: 20}}
+            title='Five'
+            buttonStyle={styles.button}
+            onPress={this.navigateToScreen('Five')}/>
 
-          <Text style={styles.sectionHeadingStyle}>
-          </Text>
-
-        <Button
-         raised
-         icon={{name: 'trash-o', type: 'font-awesome', size: 20}}
-         title='Second'
-         buttonStyle={styles.button}
-         onPress={this.navigateToScreen('Second')}/>
         </ScrollView>
       </View>
     );

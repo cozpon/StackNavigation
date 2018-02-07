@@ -24,6 +24,7 @@ export const Drawer = DrawerNavigator({
 }, {
   contentComponent: DrawerContent,
   drawerWidth: 250,
+  drawerPosition: 'right',
   drawerOpenRoute: 'DrawerOpen',
   drawerCloseRoute: 'DrawerClose',
   drawerToggleRoute: 'DrawerToggle',
@@ -31,7 +32,7 @@ export const Drawer = DrawerNavigator({
 
 export const Tab = TabNavigator({
   Home: {
-    screen: Home,
+    screen: Drawer,
   },
   First: {
     screen: First,
