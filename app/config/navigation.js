@@ -1,14 +1,16 @@
 import React from "react";
-import { TabNavigator, DrawerNavigator } from "react-navigation";
+import { StackNavigator, TabNavigator, DrawerNavigator } from "react-navigation";
 
 import DrawerContent from "../views/Sidebar"
 
 import Profile from '../views/Profile';
 import Extra from '../views/Extra';
 
+import SignIn from '../views/SignIn';
+
 import Home from '../views/Home';
 import Info from '../views/Info';
-import Last from '../views/Last_One';
+import Logout from '../views/Logout';
 
 export const Drawer = DrawerNavigator({
   Home: {
@@ -17,8 +19,8 @@ export const Drawer = DrawerNavigator({
   Info: {
     screen: Info,
   },
-  Last: {
-    screen: Last,
+  Logout: {
+    screen: Logout,
   }
 }, {
   contentComponent: DrawerContent,
@@ -29,7 +31,7 @@ export const Drawer = DrawerNavigator({
   drawerToggleRoute: 'DrawerToggle',
 });
 
-export const Tab = TabNavigator({
+export const SignedIn = TabNavigator({
   Home: {
     screen: Drawer,
   },
@@ -52,3 +54,35 @@ export const Tab = TabNavigator({
     }
   }
 });
+
+export const SignedOut = StackNavigator({
+  SignIn: {
+    screen: SignIn,
+    navigationOptions: {
+      title: "Sign Up"
+    }
+  },
+});
+
+export const RootNavigator = (signedIn = false) => {
+  return StackNavigator(
+    {
+      SignedIn: {
+        screen: SignedIn,
+        navigationOptions: {
+          gesturesEnabled: false
+        }
+      },
+      SignedOut: {
+        screen: SignedOut,
+        navigationOptions: {
+          gesturesEnabled: false
+        }
+      }
+    }, {
+      headerMode: "none",
+      mode: "modal",
+      initialRouteName: signedIn ? "SignedIn" : "SignedOut"
+    }
+  );
+};

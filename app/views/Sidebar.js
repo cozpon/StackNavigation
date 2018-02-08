@@ -45,9 +45,9 @@ class DrawerContent extends Component {
           <Button
             raised
             icon={{name: 'user-circle', type: 'font-awesome', size: 20}}
-            title='Another Button'
+            title='Logout'
             buttonStyle={styles.button}
-            onPress={this.navigateToScreen('Last')}/>
+            onPress={this.navigateToScreen('Logout')}/>
 
         </ScrollView>
       </View>
